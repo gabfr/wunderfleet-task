@@ -12,7 +12,7 @@
         <div class="form-group">
             <div class="row">
                 <div class="col-md-6"><button type="button" @click.prevent="gotoPreviousStep" :disabled="sendingFormData">Back to previous form</button></div>
-                <div class="col-md-6"><button type="submit" :disabled="sendingFormData">Next</button></div>
+                <div class="col-md-6 text-right"><button type="submit" :disabled="sendingFormData">Next</button></div>
             </div>
         </div>
     </form>

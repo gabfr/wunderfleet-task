@@ -16,7 +16,7 @@
         <div class="form-group">
             <div class="row">
                 <div class="col-md-6"></div>
-                <div class="col-md-6"><button type="submit">Next</button></div>
+                <div class="col-md-6 text-right"><button type="submit">Next</button></div>
             </div>
         </div>
     </form>
