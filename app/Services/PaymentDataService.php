@@ -3,14 +3,23 @@
 namespace App\Services;
 
 use App\Customer;
+use GuzzleHttp\Client;
 
 class PaymentDataService
 {
+    /**
+     * PaymentDataService constructor.
+     */
     public function __construct()
     {
         $this->client = new Client(['base_uri' => config('services.payment-data.url')]);
     }
 
+    /**
+     * Creates the customer payment data on the wunderfleet service API
+     * @param Customer $customer
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function process(Customer $customer)
     {
         $response = $this->client->request('POST', '/default/wunderfleet-recruiting-backend-dev-save-payment-data', [
