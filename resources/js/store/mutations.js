@@ -23,6 +23,9 @@ export default {
         }
         state.register_form_step = state.register_form_step - 1;
     },
+    setRegisterFormStep(state, stepNum) {
+        state.register_form_step = stepNum;
+    },
     setPersistedCustomer(state, customer) {
         state.persisted_customer = customer;
     }
