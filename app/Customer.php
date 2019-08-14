@@ -25,6 +25,6 @@ class Customer extends Model
     ];
 
     protected $dispatchesEvents = [
-        CustomerWasCreated::class
+        'created' => CustomerWasCreated::class,
     ];
 }
