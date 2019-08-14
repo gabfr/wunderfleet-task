@@ -40929,7 +40929,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "street", name: "street" },
+          attrs: { required: "", id: "street", name: "street" },
           domProps: { value: _vm.register_form.street },
           on: { input: _vm.setRegisterFormFieldValue }
         })
@@ -40941,7 +40941,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "streetNumber", name: "streetNumber" },
+          attrs: { required: "", id: "streetNumber", name: "streetNumber" },
           domProps: { value: _vm.register_form.streetNumber },
           on: { input: _vm.setRegisterFormFieldValue }
         })
@@ -40953,7 +40953,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "zipcode", name: "zipcode" },
+          attrs: { required: "", id: "zipcode", name: "zipcode" },
           domProps: { value: _vm.register_form.zipcode },
           on: { input: _vm.setRegisterFormFieldValue }
         })
@@ -40965,7 +40965,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "city", name: "city" },
+          attrs: { required: "", id: "city", name: "city" },
           domProps: { value: _vm.register_form.city },
           on: { input: _vm.setRegisterFormFieldValue }
         })
@@ -41079,7 +41079,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "accountOwner", name: "accountOwner" },
+          attrs: { required: "", id: "accountOwner", name: "accountOwner" },
           domProps: { value: _vm.register_form.accountOwner },
           on: { input: _vm.setRegisterFormFieldValue }
         })
@@ -41091,7 +41091,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "iban", name: "iban" },
+          attrs: { required: "", id: "iban", name: "iban" },
           domProps: { value: _vm.register_form.iban },
           on: { input: _vm.setRegisterFormFieldValue }
         })
@@ -41169,7 +41169,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "firstName", name: "firstName" },
+          attrs: { required: "", id: "firstName", name: "firstName" },
           domProps: { value: _vm.register_form.firstName },
           on: { input: _vm.setRegisterFormFieldValue }
         })
@@ -41181,7 +41181,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "lastName", name: "lastName" },
+          attrs: { required: "", id: "lastName", name: "lastName" },
           domProps: { value: _vm.register_form.lastName },
           on: { input: _vm.setRegisterFormFieldValue }
         })
@@ -41193,7 +41193,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("input", {
-          attrs: { id: "telephone", name: "telephone" },
+          attrs: { required: "", id: "telephone", name: "telephone" },
           domProps: { value: _vm.register_form.telephone },
           on: { input: _vm.setRegisterFormFieldValue }
         })
