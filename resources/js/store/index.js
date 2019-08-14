@@ -34,7 +34,10 @@ const store = new Vuex.Store({
     state: {...initialState},
     getters,
     actions,
-    mutations
+    mutations: {
+        ...mutations,
+        resetState(state) { for (let k in initialState) state[k] = initialState[k]; }
+    }
 });
 
 export default store
