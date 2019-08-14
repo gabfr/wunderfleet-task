@@ -34,4 +34,8 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+    'payment-data' => [
+        'url' => env('PAYMENT_DATA_URL', '')
+    ]
+
 ];
