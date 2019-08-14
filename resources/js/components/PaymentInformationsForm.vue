@@ -3,11 +3,11 @@
         <h2>Payment Informations (3/4)</h2>
         <div class="form-group">
             <label class="label" for="accountOwner">Account owner</label>
-            <input id="accountOwner" name="accountOwner" :value="register_form.accountOwner" @input="setRegisterFormFieldValue">
+            <input required id="accountOwner" name="accountOwner" :value="register_form.accountOwner" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <label class="label" for="iban">IBAN</label>
-            <input id="iban" name="iban" :value="register_form.iban" @input="setRegisterFormFieldValue">
+            <input required id="iban" name="iban" :value="register_form.iban" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <div class="row">

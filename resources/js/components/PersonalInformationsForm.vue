@@ -3,15 +3,15 @@
         <h2>Personal Informations (1/4)</h2>
         <div class="form-group">
             <label class="label" for="firstName">First name</label>
-            <input id="firstName" name="firstName" :value="register_form.firstName" @input="setRegisterFormFieldValue">
+            <input required id="firstName" name="firstName" :value="register_form.firstName" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <label class="label" for="lastName">Last name</label>
-            <input id="lastName" name="lastName" :value="register_form.lastName" @input="setRegisterFormFieldValue">
+            <input required id="lastName" name="lastName" :value="register_form.lastName" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <label class="label" for="telephone">Telephone</label>
-            <input id="telephone" name="telephone" :value="register_form.telephone" @input="setRegisterFormFieldValue">
+            <input required id="telephone" name="telephone" :value="register_form.telephone" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <div class="row">

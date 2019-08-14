@@ -3,19 +3,19 @@
         <h2>Address Informations (2/4)</h2>
         <div class="form-group">
             <label class="label" for="street">Street</label>
-            <input id="street" name="street" :value="register_form.street" @input="setRegisterFormFieldValue">
+            <input required id="street" name="street" :value="register_form.street" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <label class="label" for="streetNumber">Number</label>
-            <input id="streetNumber" name="streetNumber" :value="register_form.streetNumber" @input="setRegisterFormFieldValue">
+            <input required id="streetNumber" name="streetNumber" :value="register_form.streetNumber" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <label class="label" for="zipcode">Zip code</label>
-            <input id="zipcode" name="zipcode" :value="register_form.zipcode" @input="setRegisterFormFieldValue">
+            <input required id="zipcode" name="zipcode" :value="register_form.zipcode" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <label class="label" for="city">City</label>
-            <input id="city" name="city" :value="register_form.city" @input="setRegisterFormFieldValue">
+            <input required id="city" name="city" :value="register_form.city" @input="setRegisterFormFieldValue">
         </div>
         <div class="form-group">
             <div class="row">
