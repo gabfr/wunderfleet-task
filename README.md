@@ -15,6 +15,11 @@ background of the server without making the client request wait until we call th
 Then, I used Vue.js as a Single Page Application that calls these endpoints. 
 This way we can decouple the interface from the backend anytime we need, also this is a highly scalable architecture.
 
+At last, but not least, to attend the constraint in this challenge that said the user can come back later into
+the form and start from where he stopped, I used the browser's `localStorage` to persist the state
+of the application. Using the local storage has the pro of letting this responsibility to the client (browser)
+and we do not need to store temporary session data in our infrastructure.
+
 ## Getting started
 
 To run this project you have to:
