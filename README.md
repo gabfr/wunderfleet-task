@@ -37,7 +37,8 @@ To keep it simple, we just have 3 tables for this system to run:
  - What more can you optimize for performance on your project?
    - I already prepared the architecture to use processing queues to handle the API calls, 
    for thus we need to change the `QUEUE_CONNECTION` environment variable in the `.env` file to use something 
-   like Beanstalkd or RabbitMQ or event Redis. Then with the queue system of your choice the only thing we need 
+   like Beanstalkd or RabbitMQ or Redis or even Amazon SQS (all of them has drivers available). 
+   Then with the queue system of your choice the only thing we need 
    to do is to bring up a worker running `php artisan queue:work --queue=default` 
    ([more on Laravel Queues here](https://laravel.com/docs/5.8/queues));
    - Another thing that can optimize our performance is to avoid 
