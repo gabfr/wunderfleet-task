@@ -38,6 +38,12 @@ To keep it simple, we just have 3 tables for this system to run:
 
 ![Tables Diagram](https://gabrielf.com/img/wunder_tables.png)
 
+Note that we have the `customers` table that is responsible to persist the customer data. And two other
+auxiliary tables:
+ - `migrations` - serves as a checkpoint of database changes, every time we need to change something in the database, we just create a migration and run the `php artisan migrate`, it will run the proper database modifications and store which was the last migration it ran in this table
+ - `failed_jobs` - serves as a repository for failed jobs, example: if the payment API goes through a downtime
+ all the jobs will start to fail with timeout exception and logged into this `failed_jobs` table. Then when the API is back up we can just run `php artisan queue:retry all` to reprocess all the payment data that failed to process in the downtime window
+
 ## Q&A
  - What more can you optimize for performance on your project?
    - I already prepared the architecture to use processing queues to handle the API calls, 
